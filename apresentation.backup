@@ -1,0 +1,160 @@
+\documentclass{beamer} 
+\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc} % acento normal
+\usepackage[utf8]{inputenc}
+\usepackage{scalefnt}
+\usepackage{color, colortbl, multirow}
+\usepackage{epstopdf} %usar figura eps
+\usepackage{verbatim} % para colocar o comment
+%\usepackage[latin1]{inputenc}
+\usepackage[algoruled,longend]{algorithm2e}
+
+
+
+%\usepackage[applemac]{inputenc} % acento mac
+
+\usepackage{graphicx} % para inserir figuras
+%\graphicspath{figuras/} % para caminho da pasta com figuras
+
+\usepackage{adjustbox}
+
+
+\setbeamertemplate{navigation symbols}{} % remover barra de navegao
+\setbeamertemplate{footline}[frame number] % numero de paginas
+
+
+\usetheme {Frankfurt} %Berlin Malmoe Warsaw Rochester Darmstadt Madrid Antibes Bergen Berkley Boadilla Copenhagen Dresden Frankfurt 
+%Goettingen Hannover Ilmenau JuanLesPins Luebeck Marburg Montpellier PaloAlto Pittsburgh Singapore Szeged boxes default CambridgeUS AnnArbor Rochester 
+
+\usecolortheme{seahorse} %dolphin orchid whale
+%albatross; beaver; beetle; crane; default; dolphin; dove; fly; lily; orchid; rose;seagull; seahorse; sidebartab; whale; wolverine
+
+\definecolor{light_green}{RGB}{230,255,230} %cria a cor pra ser usada no background
+\definecolor{tbGreen}{RGB}{166,210,166}
+
+\setbeamercolor{background canvas}{bg=light_green} % aplica a cor no background
+%\useinnertheme{circles} %define os numeradores com o padrão circles
+%\setbeamercolor{block title}{fg=white,bg=green!40!black} %define os titulos dos blocos como verde
+%\setbeamercolor{itemize item}{fg=green!40!black} %define os marcadores de ítem como verdes
+%\setbeamercolor{itemize subitem}{fg=green!40!black} %define os marcadores de sub-ítem como verdes
+%\setbeamercolor{item projected}{fg=white,bg=green!40!black} %define os numeradores como verdes
+
+\setbeamercolor{section in toc shaded}{fg=black} %define os links no tableofcontents como preto (quando estão selecionados)
+\setbeamercolor{section in toc}{fg=black} %define os links no tableofcontents como preto (quando não estão selecionados)
+
+\setbeamercolor{structure}{bg=black,fg=green!50!black}
+%\setbeamercolor{title}{fg=black, bg=green!40!black}
+%\setbeamercolor{frametitle}{fg=black, bg=green!80!black}
+
+
+
+\pgfdeclareimage[height=1cm]{c-bio}{figuras/logo.png}
+%\logo{\pgfuseimage{c-bio}}
+\pgfdeclareimage[height=1cm]{ufpr}{figuras/ufpr.jpg}
+\logo{\pgfuseimage{ufpr} \hspace{276pt} \pgfuseimage{c-bio}}
+
+%%===================== Capa =========================%%
+
+\title{ \textbf{Estudo de Hiper-heurísticas na otimização com muitos 
+objetivos} }
+
+\author{Gian M. Fritsche \\ \quad \\ \small{Advisor: Prof. Dr. Aurora T. 
+R. Pozo} }
+
+\institute{Programa de Pós-Graduação em Informática\\ Universidade Federal do 
+Paraná}
+
+\begin{document} % inicio do documento
+
+\date{23 de Abril de 2015}
+
+\frame{
+	\titlepage
+}
+
+%%===========================ROTEIRO=============================%%
+\frame{
+\frametitle{Agenda}
+
+   \hspace*{1cm}
+	\begin{minipage}[t][6cm][t]{\textwidth}
+		\vspace{-30pt}
+		\tableofcontents
+	\end{minipage}
+}
+
+%%========================Introducao================================%%
+\section{Introdução}
+\frame{
+	\frametitle{Introdução}
+}
+
+%%========================Motivacao================================%%
+\subsection{Motivação}
+\frame{
+	\frametitle{Motivação}
+}
+
+%%========================Objetivo================================%%
+\subsection{Objetivo}
+\frame{
+	\frametitle{Objetivo}
+}
+
+%%========================Conceitos================================%%
+\section{Conceitos}
+\subsection{Otimização}
+\frame{
+	\frametitle{Otimização Mono-objetivo}
+}
+
+%%========================Multi-objetivo================================%%
+\frame{
+	\frametitle{Otimização Multi-objetivo}
+}
+
+%%========================Many-objetivo================================%%
+\frame{
+	\frametitle{Otimização Many-objetivo}
+}
+
+%%========================PSO================================%%
+\subsection{Otimização por Enxame de Partículas Multi-objetivo}
+\frame{
+	\frametitle{Otimização por Enxame de Partículas}
+}
+
+%%========================MOPSO================================%%
+\frame{
+	\frametitle{Otimização por Enxame de Partículas Multi-objetivo}
+}
+
+%%========================Arquivamento================================%%
+\frame{
+	\frametitle{Operador de Arquivamento}
+}
+
+%%===================Operador de Seleção de Líder ==============%%
+\frame{
+	\frametitle{Operador de Seleção de Líder}
+}
+
+%%===================Hiper-heuristica==============%%
+\subsection{Hiper-heurística}
+\frame{
+	\frametitle{Hiper-heurística}
+}
+
+%%===================Técnicas de Seleção==============%%
+\frame{
+	\frametitle{Hiper-heurística}
+}
+
+%%===================Hiper-heuristica==============%%
+\frame{
+	\frametitle{Hiper-heurística}
+}
+
+\input{exemplo_olacir.tex}
+
+\end{document} 

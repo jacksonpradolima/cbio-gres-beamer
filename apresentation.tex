@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% UFPR Presentation
+% LaTeX Template
+% Version 1.0 (13/06/2015)
+%
+% Author: Jackson Antonio do Prado Lima
+% Site: http://www.inf.ufpr.br/japlima
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer} 
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+% For more theme see http://www.hartwork.org/beamer-theme-matrix/
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+\definecolor{light_green}{RGB}{230,255,230} % Create a background color
+\definecolor{tbGreen}{RGB}{166,210,166}
+
+\setbeamercolor{background canvas}{bg=light_green} % Apply the background color
+%\useinnertheme{circles} %define os numeradores com o padrão circles
+%\setbeamercolor{block title}{fg=white,bg=green!40!black} %define os titulos dos blocos como verde
+%\setbeamercolor{itemize item}{fg=green!40!black} %define os marcadores de ítem como verdes
+%\setbeamercolor{itemize subitem}{fg=green!40!black} %define os marcadores de sub-ítem como verdes
+%\setbeamercolor{item projected}{fg=white,bg=green!40!black} %define os numeradores como verdes
+
+\setbeamercolor{section in toc shaded}{fg=black} %define os links no tableofcontents como preto (quando estão selecionados)
+\setbeamercolor{section in toc}{fg=black} %define os links no tableofcontents como preto (quando não estão selecionados)
+
+\setbeamercolor{structure}{bg=black,fg=green!50!black}
+%\setbeamercolor{title}{fg=black, bg=green!40!black}
+%\setbeamercolor{frametitle}{fg=black, bg=green!80!black}
+
+
+\setbeamertemplate{navigation symbols}{} % remover barra de navegao
+%\setbeamertemplate{footline}[frame number] % numero de paginas
+
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\usebeamerfont{author in head/foot}\insertshortinstitute
+		\end{beamercolorbox}%
+	    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+			\usebeamerfont{title in head/foot}
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+		\end{beamercolorbox}
+	}%
+	\vskip0pt%
+}
+
+\usepackage[brazil]{babel} %Allow the use of brazilian portuguese language
+%\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc} % acento normal
+\usepackage[utf8]{inputenc}
+
+\usepackage{scalefnt}
+\usepackage{color, colortbl, multirow}
+\usepackage{epstopdf} % usar figura eps
+\usepackage{verbatim} % para colocar o comment
+\usepackage[portuguese,ruled,lined]{algorithm2e}
+\usepackage{algorithmic}
+
+\algsetup{linenosize=\tiny}
+
+\setcounter{secnumdepth}{5}
+\SetKwFor{Para}{para}{fa\c{c}a}{fim para}
+\SetKwFor{ParaCada}{para cada}{fa\c{c}a}{fim para cada}
+\SetKwBlock{Inicio}{inicio}{fim}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+\usepackage[export]{adjustbox}
+
+\hypersetup{pdfpagemode=FullScreen}   % Full Screen
+\hypersetup{pdfpagelayout=SinglePage} % Page layout
+
+\pgfdeclareimage[height=0.5cm]{c-bio}{figuras/logo.png}
+\pgfdeclareimage[height=0.5cm]{ufpr}{figuras/ufpr.png}
+\logo{\pgfuseimage{ufpr} \hspace{320pt} \pgfuseimage{c-bio}}
+
+
+\input{pretextual.tex}
+
+\input{introduction.tex}
+
+\input{proposedmethod.tex}	
+
+\input{results.tex}
+
+\input{thanks.tex}
+
+\end{document} 

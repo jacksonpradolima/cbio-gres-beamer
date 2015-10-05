@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Objetivo}{3}{0}{1}
+\beamer@sectionintoc {2}{M\IeC {\'e}todo Proposto}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{M\IeC {\'e}todo Proposto}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Objetivos}{5}{0}{2}
+\beamer@sectionintoc {3}{Configura\IeC {\c c}\IeC {\~a}o dos Experimentos}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Experimentos}{8}{0}{3}
+\beamer@sectionintoc {4}{Resultados}{13}{0}{4}
+\beamer@subsectionintoc {4}{1}{An\IeC {\'a}lise}{13}{0}{4}
+\beamer@subsectionintoc {4}{2}{Resultados}{14}{0}{4}

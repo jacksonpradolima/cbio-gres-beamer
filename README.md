@@ -1,20 +1,62 @@
-![alt tag](http://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg)
+# C-Bio GrES - Beamer Presentation Template
+---
 
-# What is it?
+This repository contains templates used by C-Bio and GrES Research Groups. The templates used are two: (i) a traditional LaTeX Beamer presentation template; and (ii) LaTeX Beamer presentation template derived from Kenton Hamaluik's Execushares template:
 
-The C-Bio/GrES presentation is a project based in LaTeX and using the Beamer templates for generate presentations. The template is used by group research C-Bio (Computação Bio-Inspirada) and GrES (Grupo de Engenharia de Software).
+https://github.com/FuzzyWuzzie/Beamer-Theme-Execushares
+
+## Dependencies:
+
+    latex-beamer class 3.0.7 (http://latex-beamer.sourceforge.net)
+    texlive-latex 2008+ (http://www.tug.org/texlive/)
+    automake (optional, used to run xelatelatex commands)
+
+## Install
+
+Install is simply downloading the code from github. Here we install cbio-gres-beamer to $HOME/cbio-gres-beamer:
+
+```shell
+$ cd $HOME
+$ git clone http://github.com/jacksonpradolima/cbio-gres-beamer.git
+```
+
+## Generating the presentation:
+
+> The example below is based on execushares template located in templates/execushares/
+
+Customize cbio-gres-beamer/templates/execushares/sample.tex to your liking:
+
+```shell
+$ vim $HOME/cbio-gres-beamer/templates/execushares/slides.tex
+```
+
+Then change to the cbio-gres-beamer directory and run make to generate a presentation PDF:
+
+```shell
+$ cd $HOME/cbio-gres-beamer/templates/execushares/
+$ make
+```
+
+You can then view the resulting pdf, named sample.pdf, in the 'cbio-gres-beamer/templates/execushares/' directory:
+
+```shell
+$ xpdf $HOME/cbio-gres-beamer/templates/execushares/sample.pdf
+```
+
+You can also use make to do this automatically with either xpdf, okular, acroread, or evince:
+
+```shell
+$ make view-xpdf
+$ make view-okular
+$ make view-acroread
+$ make view-evince
+```
+
+The above "make view-\*" commands will automatically build $HOME/cbio-gres-beamer/templates/execushares/sample.pdf if necessary
 
 ### Beamer Templates 
 
 - See [https://www.hartwork.org/beamer-theme-matrix/] 
-
-# How do I start?
-
-For to use do the step-by-step:
-
-1. Access [here](https://github.com/jacksonpradolima/LaTeX-C-Bio-GrES-Apresentation/archive/master.zip) and dowload the project;
-2. Unzip in some directory of your choise;
-3. Creates your apresentation from file *apresentation.tex* distributed the downloaded file. The file has comments for help.
 
 > Do you not know what is LaTeX? Access [here](http://latex-community.org/) and [here](http://www.latex-project.org/)
 
@@ -205,9 +247,3 @@ This statement requires citation \cite{p1}.
 	\bibliography{refs}
 \end{frame}
 ```
-
-# and many more!
-
-> A project developed by Jackson Antonio do Prado Lima
-
-[Personal Page](http://www.inf.ufpr.br/japlima/)

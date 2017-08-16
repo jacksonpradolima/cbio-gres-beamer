@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% cbio-gres presentation using Execushares
+% LaTeX Template
+% Version 1.0 (2017-08-16)
+%
+% Author: Jackson Antonio do Prado Lima 
+% 		 <jacksonpradolima at gmail dot com>
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%!TEX program = xelatex
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{blindtext}
+\usetheme{Execushares}
+
+%Theme options (allow multiple options):
+
+% Research Group (researchgroup) options: gres (default), cbio
+% How to use: \usetheme[researchgroup=cbio]{Execushares}
+
+% Color theme (colortheme): dark (default), blue, green
+% How to use: \usetheme[colortheme=blue]{Execushares}
+
+
+\title{Title}
+\author{Jackson Antonio do Prado Lima (japlima at inf.ufpr.br) \\ Author 2}
+\date{\today}
+
+% Workaround to put a text like conference local in the footnote :D
+\subtitle{\tiny{SAST, September 18--19, 2017, Fortaleza, Brazil}}
+
+% Full Screen
+\hypersetup{pdfpagemode=FullScreen}   
+
+\setcounter{showSlideNumbers}{1}
+
+\begin{document}
+	% The progress bar is controled by Contents.
+	% Each new section, it must be added in the contents
+	\setcounter{showProgressBar}{0}
+	\setcounter{showSlideNumbers}{0}
+
+	\frame{\titlepage}
+
+	\begin{frame}
+		\frametitle{Contents}
+		\begin{enumerate}
+			\item Introduction \\ \textcolor{ExecusharesGrey}{\footnotesize\hspace{1em} The reasoning and background behind this theme}
+			\item Lorem Text  \\ \textcolor{ExecusharesGrey}{\footnotesize\hspace{1em} Just some Lorem Ipsum for filler}
+			\item Conclusions \\ \textcolor{ExecusharesGrey}{\footnotesize\hspace{1em} Some closing thoughts}
+		\end{enumerate}
+	\end{frame}
+
+	\setcounter{framenumber}{0}
+	\setcounter{showProgressBar}{1}
+	\setcounter{showSlideNumbers}{1}
+	
+	\section{Introduction}
+		\begin{frame}
+			\frametitle{Why Beamer?}
+			\begin{enumerate}
+				\item LaTeX is great!
+				\item Beamer is easy to use!
+				\item Why not?
+			\end{enumerate}
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{Why Custom Themes?}
+			\begin{itemize}
+				\item The default Beamer themes are outdated and visually displeasing
+				\item There aren't many Beamer themes readily available online
+				\item Making custom Beamer themes is easy!
+			\end{itemize}
+		\end{frame}
+
+	\section{Lorem Ipsum}
+		\begin{frame}
+			\frametitle{Lorem 1}
+			\blindtext
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{Lorem 2}
+			\blindtext
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{Lorem 3}
+			\blindtext
+		\end{frame}
+	
+	\section{Conclusions}
+		\begin{frame}
+			\frametitle{Closing Thoughts}
+			\begin{itemize}
+				\item Thank You!
+			\end{itemize}
+		\end{frame}
+
+\end{document}

@@ -1,5 +1,4 @@
 # C-Bio GrES - Beamer Presentation Template
----
 
 This repository contains templates used by C-Bio and GrES Research Groups. The templates used are two: (i) a traditional LaTeX Beamer presentation template; and (ii) LaTeX Beamer presentation template derived from Kenton Hamaluik's Execushares template:
 
@@ -7,9 +6,9 @@ https://github.com/FuzzyWuzzie/Beamer-Theme-Execushares
 
 ## Dependencies:
 
-    latex-beamer class 3.0.7 (http://latex-beamer.sourceforge.net)
-    texlive-latex 2008+ (http://www.tug.org/texlive/)
-    automake (optional, used to run xelatelatex commands)
+- latex-beamer class 3.0.7 (http://latex-beamer.sourceforge.net)
+- texlive-latex 2008+ (http://www.tug.org/texlive/)
+- automake (optional, used to run xelatelatex commands)
 
 ## Install
 
@@ -54,15 +53,17 @@ $ make view-evince
 
 The above "make view-\*" commands will automatically build $HOME/cbio-gres-beamer/templates/execushares/sample.pdf if necessary
 
+You can clean the directory runnig:
+
+```shell
+$ make clean
+```
+
 ### Beamer Templates 
 
 - See [https://www.hartwork.org/beamer-theme-matrix/] 
 
 > Do you not know what is LaTeX? Access [here](http://latex-community.org/) and [here](http://www.latex-project.org/)
-
-# How to write?
-
-- I recommend write using TeXstudios [here](http://texstudio.sourceforge.net/) 
 
 # Tips
 

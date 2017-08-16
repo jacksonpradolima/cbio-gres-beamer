@@ -36,6 +36,13 @@ $ cd $HOME/cbio-gres-beamer/templates/execushares/
 $ make
 ```
 
+If the folder already contains the pdf file, you can force make:
+
+```shell
+$ cd $HOME/cbio-gres-beamer/templates/execushares/
+$ make --always-make
+```
+
 You can then view the resulting pdf, named sample.pdf, in the 'cbio-gres-beamer/templates/execushares/' directory:
 
 ```shell

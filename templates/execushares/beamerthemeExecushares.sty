@@ -199,7 +199,11 @@
 				\draw[fill=CbioGresDarkColor, color=CbioGresDarkColor] (0.5\slidewidth,0) node[anchor=north]{} -- (\slidewidth,0.5) node[anchor=north]{} -- (\slidewidth,0) node[anchor=south]{} -- cycle;
 				
 				% Light	Color
-				\draw[fill=CbioGresLightColor, color=CbioGresLightColor] (0,0.5) node[anchor=north]{} -- (0.85\slidewidth,0) node[anchor=north]{} -- (0,0) node[anchor=south]{} -- cycle;
+				\ifthenelse{\equal{\colortheme}{dark}}{
+					\draw[fill=ExecusharesGrey, color=ExecusharesGrey] (0,0.5) node[anchor=north]{} -- (0.85\slidewidth,0) node[anchor=north]{} -- (0,0) node[anchor=south]{} -- cycle;
+				}{
+					\draw[fill=CbioGresLightColor, color=CbioGresLightColor] (0,0.5) node[anchor=north]{} -- (0.85\slidewidth,0) node[anchor=north]{} -- (0,0) node[anchor=south]{} -- cycle;
+				}
 
 			\else
 				% NOT the title page

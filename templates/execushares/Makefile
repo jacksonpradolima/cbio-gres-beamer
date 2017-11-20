@@ -16,5 +16,5 @@ view-evince: sample.pdf
 	evince sample.pdf & disown	
 
 clean:
-	#rm -rf out
 	latexmk -c
+	rm -rf *run.xml* *.snm* *blx.bib* *.nav*

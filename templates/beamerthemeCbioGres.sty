@@ -6,6 +6,14 @@
 \usepackage[font=scriptsize]{caption}
 \renewcommand{\footnotesize}{\tiny}
 \RequirePackage{ifthen}
+%table packages
+\usepackage{graphicx}\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{stfloats}
+\usepackage{psfrag}
+\usepackage[]{threeparttable}
+\usepackage{multicol}
+\usepackage{lscape}
 
 \newcommand{\researchgroup}{gres}
 \DeclareOptionBeamer{researchgroup}{\renewcommand{\researchgroup}{#1}}
@@ -40,6 +48,10 @@
 
 \ifthenelse{\equal{\colortheme}{blue}}{
 	\definecolor{CbioGresDarkColor}{RGB}{34,105,209}
+}
+
+\ifthenelse{\equal{\colortheme}{lightblue}}{
+	\definecolor{CbioGresDarkColor}{RGB}{92,171,199}
 }
 
 \ifthenelse{\equal{\colortheme}{green}}{
